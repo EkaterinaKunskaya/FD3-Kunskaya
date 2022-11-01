@@ -1,0 +1,112 @@
+﻿.ProductsBlock
+{
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.ProductsBlock .ShopName
+{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.ProductsBlock .Products
+{
+  width: 100%;
+	border: none;
+	margin-bottom: 20px;
+	border-collapse: separate;
+}
+
+.ProductsBlock .Products .ColumnHeaders
+{
+  font-weight: bold;
+	text-align: center;
+	border: none;
+	padding: 10px 15px;
+	background: #EDEDED;
+	font-size: 14px;
+	border-top: 1px solid #ddd;
+}
+
+.ProductsBlock .Products .Product .ColumnHeaders:first-child, .Products .Product .ProductInfo:first-child
+{
+	border-left: 1px solid #ddd;
+}
+
+.ProductsBlock .Products .Product .ColumnHeaders:last-child, .Products .Product .ProductInfo:last-child
+{
+	border-right: 1px solid #ddd;
+}
+
+.ProductsBlock .Products .Product .ColumnHeaders:first-child
+{
+	border-radius: 20px 0 0 0;
+}
+
+.ProductsBlock .Products .Product .ColumnHeaders:last-child
+{
+	border-radius: 0 20px 0 0;
+}
+
+.ProductsBlock .Products .Product
+{
+  border: 1px solid grey;
+}
+
+.ProductsBlock .Products .Product .ProductInfo
+{
+  text-align: left;
+	border: none;
+	padding: 10px 15px;
+	font-size: 14px;
+	vertical-align: top;
+}
+
+.ProductsBlock .Products .tbody .Product:nth-child(even)
+{
+	background: #F8F8F8;
+}
+
+.ProductsBlock .Products .tbody .Product:last-child .ProductInfo
+{
+	border-bottom: 1px solid #ddd;
+}
+
+.ProductsBlock .Products .tbody .Product:last-child .ProductInfo:first-child
+{
+	border-radius: 0 0 0 20px;
+}
+
+.ProductsBlock .Products .tbody .Product:last-child .ProductInfo:last-child
+{
+	border-radius: 0 0 20px 0;
+}
+
+.ProductsBlock .Products .Product .Name
+{
+  
+}
+
+.ProductsBlock .Products .Product .Price
+{
+  text-align: center;
+}
+
+.ProductsBlock .Products .Product .Url
+{
+  text-align: center;
+}
+
+.ProductsBlock .Products .Product .Quantity
+{
+  text-align: center;
+}
+
+.ProductsBlock .Products .Product .ProductImg
+{
+  width: 100px;
+  height: 150px;
+}
