@@ -24,18 +24,16 @@ var Products = React.createClass({
 
     productSelected: function (id) {
         console.log('выбран продукт с id ' + id);
-        this.setState({
-            selectedProductId: id
-        }, this.processListSelect);
+        this.setState({selectedProductId: id}, this.processListSelect);
     },
-
+/*
     processListSelect: function () {
-        /*(this.state.selectedProductId && this.state.activeClass !='active')
+        (this.state.selectedProductId && this.state.activeClass !='active')
         ? 
         this.setState( ()=>{return {activeClass:  'active'}} )
-        : this.setState(()=>{return {activeClass:  ''}} )*/
+        : this.setState(()=>{return {activeClass:  ''}} )
     },
-
+*/
     productDeleted: function (id) {
         this.setState({
             deletedProductId: id
