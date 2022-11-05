@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Shop.css">
+  <link rel="stylesheet" type="text/css" href="ShopName.css">
+  <link rel="stylesheet" type="text/css" href="Products.css">
+  <link rel="stylesheet" type="text/css" href="Product.css">
+  <title>ishop</title>
+</head>
+<body>
+  <div id="container"></div>
+
+  <script src="https://unpkg.com/react@15/dist/react.js"></script> 
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
+  <script src="Shop.js"></script>
+  <script src="ShopName.js"></script>
+  <script src="Products.js"></script>
+  <script src="Product.js"></script>
+
+  <script>
+
+    ReactDOM.render(
+      React.createElement(Shop), 
+      document.getElementById('container') 
+    );
+
+  </script>
+
+</body>
+</html>
