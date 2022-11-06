@@ -11,29 +11,18 @@ var Product = React.createClass({
         selected: React.PropTypes.bool,
         cbSelected: React.PropTypes.func.isRequired,
         cbDeleted: React.PropTypes.func.isRequired,
-        selectedProductId: React.PropTypes.number,
     },
 
     getInitialState: function() {
         return { 
-            selectedProductId: null,
-            //activeClass: '',
+            selectedProductId: this.props.selectedProductId,
         };
     },
   
-    selectProduct: function(e) {
+    selectProduct: function() {
         if (this.props.id) this.props.cbSelected(this.props.id);
+    },
 
-       // this.setState({selectedProductId: this.props.id}, this.processListSelect); 
-    },
-/*
-    processListSelect: function() {
-       (this.props.selected && this.state.activeClass != 'active')
-        ? 
-        this.setState( ()=>{return {activeClass:  'active'}})
-        : this.setState(()=>{return {activeClass:  ''}})
-    },
-*/
     deleteProduct: function(e) {
         e.stopPropagation();
         this.props.cbDeleted(this.props.id);
@@ -42,7 +31,7 @@ var Product = React.createClass({
     render: function() {
       return (
         React.DOM.tr({
-            className:`Product ${(this.props.selected)? 'active' : '' /* this.state.activeClass*/}`,
+            className:`Product ${(this.props.selected)? 'active' : ''}`,
             onClick: this.selectProduct,
             }, 
             React.DOM.td({className:'Name ProductInfo'}, this.props.name),
