@@ -17,7 +17,6 @@ var Products = React.createClass({
                 {code: 10, name: 'product 10', price: 100, url: '10', quantity: 1}
             ],
             selectedProductId: null,
-            deletedProductId: null,
         };
     },
 
@@ -29,16 +28,10 @@ var Products = React.createClass({
     },
 
     productDeleted: function (id) {
-        this.setState({
-            deletedProductId: id
-        }, this.processListDelete);
-    },
-
-    processListDelete: function () {
-        let selectProduct = this.state.products.filter(v => v.code == this.state.deletedProductId);
-        if (confirm(`Delete ${selectProduct[0].name}?`)) {
+        let deleteProduct = this.state.products.filter(v => v.code == id);
+        if (confirm(`Delete ${deleteProduct[0].name}?`)) {
             this.setState(prevState => ({
-                products: prevState.products.filter(v => v.code != this.state.deletedProductId)
+                products: prevState.products.filter(v => v.code != id)
             }));
         }
     },
