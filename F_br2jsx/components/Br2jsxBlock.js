@@ -13,12 +13,11 @@ class Br2jsxBlock extends React.Component {
     let textArr = this.props.text.split(/<br *\/?>/);
     let resultTextArr = [];
     textArr.forEach((element, index)=> {
-      if (index) resultTextArr.push(<br/>);
+      if (index) resultTextArr.push(<br key={index} />);
       resultTextArr.push(element);
     });
 
     return <div className='Br2jsxBlock'>{resultTextArr}</div>;
-    
   }
 
 }
