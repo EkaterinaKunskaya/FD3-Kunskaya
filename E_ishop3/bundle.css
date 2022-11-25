@@ -1,0 +1,93 @@
+.Shop
+{
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px;
+}.ShopName
+{
+  font-weight: bold;
+  margin-bottom: 20px;
+}.Products
+{
+  width: 100%;
+	border: none;
+	margin-bottom: 20px;
+	border-collapse: separate;
+}
+
+.Products .ColumnHeaders
+{
+  font-weight: bold;
+	text-align: center;
+	border: none;
+	padding: 10px 15px;
+	background: #EDEDED;
+	font-size: 14px;
+	border-top: 1px solid #ddd;
+}
+
+.Products .Product .ColumnHeaders:first-child
+{
+	border-radius: 20px 0 0 0;
+}
+
+.Products .Product .ColumnHeaders:last-child
+{
+	border-radius: 0 20px 0 0;
+}.Product .ColumnHeaders:first-child, .Product .ProductInfo:first-child
+{
+	border-left: 1px solid #ddd;
+}
+
+.Product .ColumnHeaders:last-child, .Product .ProductInfo:last-child
+{
+	border-right: 1px solid #ddd;
+}
+
+.Product
+{
+  border: 1px solid grey;
+}
+
+.Product .ProductInfo
+{
+	border: none;
+	padding: 10px 15px;
+	font-size: 14px;
+	vertical-align: top;
+    /*background: #F8F8F8;*/
+}
+
+.Product:last-child .ProductInfo
+{
+	border-bottom: 1px solid #ddd;
+}
+
+.Product:last-child .ProductInfo:first-child
+{
+	border-radius: 0 0 0 20px;
+}
+
+.Product:last-child .ProductInfo:last-child
+{
+	border-radius: 0 0 20px 0;
+}
+
+.Product .ProductImg
+{
+  width: 100px;
+  height: 150px;
+}
+
+.Product .ProductControlDelete
+{
+
+}
+
+
+.active
+{
+    background-color: green;
+}
+/*# sourceMappingURL=bundle.css.map*/

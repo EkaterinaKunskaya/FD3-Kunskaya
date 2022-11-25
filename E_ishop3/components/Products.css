@@ -1,0 +1,51 @@
+.Products
+{
+ 	width:600px;
+	border: none;
+	margin-bottom: 20px;
+	border-collapse: separate;
+}
+
+.Products .ColumnHeaders
+{
+  	font-weight: bold;
+	text-align: center;
+	border: none;
+	padding: 10px 15px;
+	background: #EDEDED;
+	font-size: 14px;
+	border-top: 1px solid #ddd;
+}
+
+.Products .Product .ColumnHeaders:first-child
+{
+	border-radius: 20px 0 0 0;
+}
+
+.Products .Product .ColumnHeaders:last-child
+{
+	border-radius: 0 20px 0 0;
+}
+
+
+.ProductsContainer
+{
+  display: flex;
+}
+
+.NewProductBtn
+{
+	width: 150px;
+	padding: 10px;
+	float: left;
+	border: solid 1px black;
+	background: #EDEDED;
+	border-radius: 20px;
+	font-size: 20px;
+}
+
+.NewProductBtn:hover
+{
+	cursor: pointer;
+	background: #9e9d9d;
+}

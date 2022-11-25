@@ -1,0 +1,59 @@
+.Product .ColumnHeaders:first-child, .Product .ProductInfo:first-child
+{
+	border-left: 1px solid #ddd;
+}
+
+.Product .ColumnHeaders:last-child, .Product .ProductInfo:last-child
+{
+	border-right: 1px solid #ddd;
+}
+
+.Product
+{
+  border: 1px solid grey;
+}
+
+.Product .ProductInfo
+{
+	border: none;
+	padding: 10px 15px;
+	font-size: 14px;
+	vertical-align: top;
+    /*background: #F8F8F8;*/
+}
+
+.Product:last-child .ProductInfo
+{
+	border-bottom: 1px solid #ddd;
+}
+
+.Product:last-child .ProductInfo:first-child
+{
+	border-radius: 0 0 0 20px;
+}
+
+.Product:last-child .ProductInfo:last-child
+{
+	border-radius: 0 0 20px 0;
+}
+
+.Product .ProductImg
+{
+  width: 100px;
+  height: 150px;
+}
+
+.Product .ProductControlDelete
+{
+
+}
+
+.Product .ProductControlEdit
+{
+	margin-right: 10px;
+}
+
+.active
+{
+    background-color: green;
+}

@@ -1,0 +1,39 @@
+.ProductInformation
+{
+    width: 300px;
+    height: 200px;
+    position: fixed;
+    left: 680px;
+    background: #EDEDED;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.ProductInformationImg
+{
+    width: 100px;
+    height: 150px;
+}
+
+.ProductInformation-title
+{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.ProductInformation-content
+{
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+    margin: 0 auto;
+}
+
+.ProductInformation-text
+{
+    text-align: left;
+    line-height: 30px;
+}
